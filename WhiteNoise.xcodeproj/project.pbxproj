@@ -12,6 +12,7 @@
 		4CAC9F9F223E80DF008AB077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC9F9D223E80DF008AB077 /* Main.storyboard */; };
 		4CAC9FA1223E80E0008AB077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC9FA0223E80E0008AB077 /* Assets.xcassets */; };
 		4CAC9FA4223E80E0008AB077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC9FA2223E80E0008AB077 /* LaunchScreen.storyboard */; };
+		4CAC9FAD223E8334008AB077 /* baby_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC9FAC223E8334008AB077 /* baby_white_noise.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4CAC9FA0223E80E0008AB077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CAC9FA3223E80E0008AB077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CAC9FA5223E80E0008AB077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAC9FAC223E8334008AB077 /* baby_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = baby_white_noise.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,18 @@
 				4CAC9F9D223E80DF008AB077 /* Main.storyboard */,
 				4CAC9FA0223E80E0008AB077 /* Assets.xcassets */,
 				4CAC9FA2223E80E0008AB077 /* LaunchScreen.storyboard */,
+				4CAC9FAB223E8321008AB077 /* Music */,
 				4CAC9FA5223E80E0008AB077 /* Info.plist */,
 			);
 			path = WhiteNoise;
+			sourceTree = "<group>";
+		};
+		4CAC9FAB223E8321008AB077 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC9FAC223E8334008AB077 /* baby_white_noise.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +107,11 @@
 				TargetAttributes = {
 					4CAC9F95223E80DE008AB077 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAC9FA4223E80E0008AB077 /* LaunchScreen.storyboard in Resources */,
+				4CAC9FAD223E8334008AB077 /* baby_white_noise.mp3 in Resources */,
 				4CAC9FA1223E80E0008AB077 /* Assets.xcassets in Resources */,
 				4CAC9F9F223E80DF008AB077 /* Main.storyboard in Resources */,
 			);
@@ -282,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9JHH54KV6;
 				INFOPLIST_FILE = WhiteNoise/Info.plist;
@@ -291,6 +309,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.camkerr.WhiteNoise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9JHH54KV6;
 				INFOPLIST_FILE = WhiteNoise/Info.plist;
@@ -309,6 +329,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.camkerr.WhiteNoise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
